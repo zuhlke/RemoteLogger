@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08942F3328D89AAF003E5737 /* RemoteLoggerServerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08942F3228D89AAF003E5737 /* RemoteLoggerServerApp.swift */; };
+		08942F3528D89AAF003E5737 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08942F3428D89AAF003E5737 /* ContentView.swift */; };
+		08942F3728D89AB1003E5737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08942F3628D89AB1003E5737 /* Assets.xcassets */; };
+		08942F3B28D89AB1003E5737 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08942F3A28D89AB1003E5737 /* Preview Assets.xcassets */; };
+		08942F4828D89B57003E5737 /* RemoteLoggerClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08942F4728D89B57003E5737 /* RemoteLoggerClientApp.swift */; };
+		08942F4A28D89B57003E5737 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08942F4928D89B57003E5737 /* ContentView.swift */; };
+		08942F4C28D89B58003E5737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08942F4B28D89B58003E5737 /* Assets.xcassets */; };
+		08942F5028D89B58003E5737 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08942F4F28D89B58003E5737 /* Preview Assets.xcassets */; };
+		08942F5828D89BBA003E5737 /* BonjourServices in Frameworks */ = {isa = PBXBuildFile; productRef = 08942F5728D89BBA003E5737 /* BonjourServices */; };
+		08942F5A28D89BBF003E5737 /* BonjourServices in Frameworks */ = {isa = PBXBuildFile; productRef = 08942F5928D89BBF003E5737 /* BonjourServices */; };
+		08FB2D3828D8A8BB00A67364 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 08FB2D3728D8A8BB00A67364 /* Logging */; };
+		08FB2D3B28D8A91800A67364 /* LogOutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FB2D3A28D8A91800A67364 /* LogOutputStream.swift */; };
+		08FB2D3D28D8A9A400A67364 /* RemoteLogOutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FB2D3C28D8A9A400A67364 /* RemoteLogOutputStream.swift */; };
+		08FB2D3F28D8AC3200A67364 /* DeviceBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FB2D3E28D8AC3200A67364 /* DeviceBrowserView.swift */; };
+		08FB2D4128D8B09700A67364 /* DeviceStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FB2D4028D8B09700A67364 /* DeviceStateView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08942F2F28D89AAF003E5737 /* RemoteLoggerServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteLoggerServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08942F3228D89AAF003E5737 /* RemoteLoggerServerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLoggerServerApp.swift; sourceTree = "<group>"; };
+		08942F3428D89AAF003E5737 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		08942F3628D89AB1003E5737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08942F3828D89AB1003E5737 /* RemoteLoggerServer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RemoteLoggerServer.entitlements; sourceTree = "<group>"; };
+		08942F3A28D89AB1003E5737 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		08942F4528D89B57003E5737 /* RemoteLoggerClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteLoggerClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08942F4728D89B57003E5737 /* RemoteLoggerClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLoggerClientApp.swift; sourceTree = "<group>"; };
+		08942F4928D89B57003E5737 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		08942F4B28D89B58003E5737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08942F4D28D89B58003E5737 /* RemoteLoggerClient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RemoteLoggerClient.entitlements; sourceTree = "<group>"; };
+		08942F4F28D89B58003E5737 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		08942F5528D89B71003E5737 /* BonjourServices */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BonjourServices; sourceTree = "<group>"; };
+		08FB2D3428D89F9C00A67364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		08FB2D3528D8A61C00A67364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		08FB2D3A28D8A91800A67364 /* LogOutputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutputStream.swift; sourceTree = "<group>"; };
+		08FB2D3C28D8A9A400A67364 /* RemoteLogOutputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLogOutputStream.swift; sourceTree = "<group>"; };
+		08FB2D3E28D8AC3200A67364 /* DeviceBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceBrowserView.swift; sourceTree = "<group>"; };
+		08FB2D4028D8B09700A67364 /* DeviceStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStateView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08942F2C28D89AAF003E5737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08942F5828D89BBA003E5737 /* BonjourServices in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08942F4228D89B57003E5737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08FB2D3828D8A8BB00A67364 /* Logging in Frameworks */,
+				08942F5A28D89BBF003E5737 /* BonjourServices in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08942F2628D89AAF003E5737 = {
+			isa = PBXGroup;
+			children = (
+				08942F3128D89AAF003E5737 /* RemoteLoggerServer */,
+				08942F4628D89B57003E5737 /* RemoteLoggerClient */,
+				08942F5428D89B71003E5737 /* Packages */,
+				08942F3028D89AAF003E5737 /* Products */,
+				08942F5628D89BBA003E5737 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		08942F3028D89AAF003E5737 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08942F2F28D89AAF003E5737 /* RemoteLoggerServer.app */,
+				08942F4528D89B57003E5737 /* RemoteLoggerClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08942F3128D89AAF003E5737 /* RemoteLoggerServer */ = {
+			isa = PBXGroup;
+			children = (
+				08942F3228D89AAF003E5737 /* RemoteLoggerServerApp.swift */,
+				08942F3428D89AAF003E5737 /* ContentView.swift */,
+				08942F3628D89AB1003E5737 /* Assets.xcassets */,
+				08FB2D3428D89F9C00A67364 /* Info.plist */,
+				08942F3828D89AB1003E5737 /* RemoteLoggerServer.entitlements */,
+				08942F3928D89AB1003E5737 /* Preview Content */,
+			);
+			path = RemoteLoggerServer;
+			sourceTree = "<group>";
+		};
+		08942F3928D89AB1003E5737 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				08942F3A28D89AB1003E5737 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		08942F4628D89B57003E5737 /* RemoteLoggerClient */ = {
+			isa = PBXGroup;
+			children = (
+				08942F4728D89B57003E5737 /* RemoteLoggerClientApp.swift */,
+				08942F4928D89B57003E5737 /* ContentView.swift */,
+				08FB2D3E28D8AC3200A67364 /* DeviceBrowserView.swift */,
+				08FB2D4028D8B09700A67364 /* DeviceStateView.swift */,
+				08FB2D3928D8A90E00A67364 /* Logging */,
+				08942F4B28D89B58003E5737 /* Assets.xcassets */,
+				08FB2D3528D8A61C00A67364 /* Info.plist */,
+				08942F4D28D89B58003E5737 /* RemoteLoggerClient.entitlements */,
+				08942F4E28D89B58003E5737 /* Preview Content */,
+			);
+			path = RemoteLoggerClient;
+			sourceTree = "<group>";
+		};
+		08942F4E28D89B58003E5737 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				08942F4F28D89B58003E5737 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		08942F5428D89B71003E5737 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				08942F5528D89B71003E5737 /* BonjourServices */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		08942F5628D89BBA003E5737 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB2D3928D8A90E00A67364 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				08FB2D3A28D8A91800A67364 /* LogOutputStream.swift */,
+				08FB2D3C28D8A9A400A67364 /* RemoteLogOutputStream.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08942F2E28D89AAF003E5737 /* RemoteLoggerServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08942F3E28D89AB1003E5737 /* Build configuration list for PBXNativeTarget "RemoteLoggerServer" */;
+			buildPhases = (
+				08942F2B28D89AAF003E5737 /* Sources */,
+				08942F2C28D89AAF003E5737 /* Frameworks */,
+				08942F2D28D89AAF003E5737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemoteLoggerServer;
+			packageProductDependencies = (
+				08942F5728D89BBA003E5737 /* BonjourServices */,
+			);
+			productName = RemoteLoggerServer;
+			productReference = 08942F2F28D89AAF003E5737 /* RemoteLoggerServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08942F4428D89B57003E5737 /* RemoteLoggerClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08942F5328D89B58003E5737 /* Build configuration list for PBXNativeTarget "RemoteLoggerClient" */;
+			buildPhases = (
+				08942F4128D89B57003E5737 /* Sources */,
+				08942F4228D89B57003E5737 /* Frameworks */,
+				08942F4328D89B57003E5737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemoteLoggerClient;
+			packageProductDependencies = (
+				08942F5928D89BBF003E5737 /* BonjourServices */,
+				08FB2D3728D8A8BB00A67364 /* Logging */,
+			);
+			productName = RemoteLoggerClient;
+			productReference = 08942F4528D89B57003E5737 /* RemoteLoggerClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08942F2728D89AAF003E5737 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					08942F2E28D89AAF003E5737 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					08942F4428D89B57003E5737 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 08942F2A28D89AAF003E5737 /* Build configuration list for PBXProject "RemoteLogger" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08942F2628D89AAF003E5737;
+			packageReferences = (
+				08FB2D3628D8A8BB00A67364 /* XCRemoteSwiftPackageReference "swift-log" */,
+			);
+			productRefGroup = 08942F3028D89AAF003E5737 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08942F2E28D89AAF003E5737 /* RemoteLoggerServer */,
+				08942F4428D89B57003E5737 /* RemoteLoggerClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08942F2D28D89AAF003E5737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08942F3B28D89AB1003E5737 /* Preview Assets.xcassets in Resources */,
+				08942F3728D89AB1003E5737 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08942F4328D89B57003E5737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08942F5028D89B58003E5737 /* Preview Assets.xcassets in Resources */,
+				08942F4C28D89B58003E5737 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08942F2B28D89AAF003E5737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08942F3528D89AAF003E5737 /* ContentView.swift in Sources */,
+				08942F3328D89AAF003E5737 /* RemoteLoggerServerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08942F4128D89B57003E5737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08FB2D4128D8B09700A67364 /* DeviceStateView.swift in Sources */,
+				08942F4A28D89B57003E5737 /* ContentView.swift in Sources */,
+				08FB2D3D28D8A9A400A67364 /* RemoteLogOutputStream.swift in Sources */,
+				08FB2D3B28D8A91800A67364 /* LogOutputStream.swift in Sources */,
+				08942F4828D89B57003E5737 /* RemoteLoggerClientApp.swift in Sources */,
+				08FB2D3F28D8AC3200A67364 /* DeviceBrowserView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		08942F3C28D89AB1003E5737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08942F3D28D89AB1003E5737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		08942F3F28D89AB1003E5737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RemoteLoggerServer/RemoteLoggerServer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RemoteLoggerServer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RemoteLoggerServer/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RemoteLoggerServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08942F4028D89AB1003E5737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RemoteLoggerServer/RemoteLoggerServer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RemoteLoggerServer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RemoteLoggerServer/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RemoteLoggerServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		08942F5128D89B58003E5737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RemoteLoggerClient/RemoteLoggerClient.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RemoteLoggerClient/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RemoteLoggerClient/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RemoteLoggerClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08942F5228D89B58003E5737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RemoteLoggerClient/RemoteLoggerClient.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RemoteLoggerClient/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RemoteLoggerClient/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RemoteLoggerClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08942F2A28D89AAF003E5737 /* Build configuration list for PBXProject "RemoteLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08942F3C28D89AB1003E5737 /* Debug */,
+				08942F3D28D89AB1003E5737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08942F3E28D89AB1003E5737 /* Build configuration list for PBXNativeTarget "RemoteLoggerServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08942F3F28D89AB1003E5737 /* Debug */,
+				08942F4028D89AB1003E5737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08942F5328D89B58003E5737 /* Build configuration list for PBXNativeTarget "RemoteLoggerClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08942F5128D89B58003E5737 /* Debug */,
+				08942F5228D89B58003E5737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		08FB2D3628D8A8BB00A67364 /* XCRemoteSwiftPackageReference "swift-log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-log.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		08942F5728D89BBA003E5737 /* BonjourServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BonjourServices;
+		};
+		08942F5928D89BBF003E5737 /* BonjourServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BonjourServices;
+		};
+		08FB2D3728D8A8BB00A67364 /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08FB2D3628D8A8BB00A67364 /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 08942F2728D89AAF003E5737 /* Project object */;
+}
