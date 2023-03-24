@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		086454D329CDE343009AA33D /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 086454D229CDE343009AA33D /* Logging */; };
 		08942F3328D89AAF003E5737 /* RemoteLoggerServerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08942F3228D89AAF003E5737 /* RemoteLoggerServerApp.swift */; };
 		08942F3528D89AAF003E5737 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08942F3428D89AAF003E5737 /* ContentView.swift */; };
 		08942F3728D89AB1003E5737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08942F3628D89AB1003E5737 /* Assets.xcassets */; };
@@ -37,7 +38,7 @@
 		08942F4B28D89B58003E5737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08942F4D28D89B58003E5737 /* RemoteLoggerClient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RemoteLoggerClient.entitlements; sourceTree = "<group>"; };
 		08942F4F28D89B58003E5737 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		08942F5528D89B71003E5737 /* BonjourServices */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BonjourServices; sourceTree = "<group>"; };
+		08D693B529CDE64A00987F66 /* RemoteLogger */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = RemoteLogger; sourceTree = "<group>"; };
 		08FB2D3428D89F9C00A67364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		08FB2D3528D8A61C00A67364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		08FB2D3A28D8A91800A67364 /* LogOutputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutputStream.swift; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				086454D329CDE343009AA33D /* Logging in Frameworks */,
 				08942F5828D89BBA003E5737 /* BonjourServices in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +137,7 @@
 		08942F5428D89B71003E5737 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				08942F5528D89B71003E5737 /* BonjourServices */,
+				08D693B529CDE64A00987F66 /* RemoteLogger */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -174,6 +176,7 @@
 			name = RemoteLoggerServer;
 			packageProductDependencies = (
 				08942F5728D89BBA003E5737 /* BonjourServices */,
+				086454D229CDE343009AA33D /* Logging */,
 			);
 			productName = RemoteLoggerServer;
 			productReference = 08942F2F28D89AAF003E5737 /* RemoteLoggerServer.app */;
@@ -588,6 +591,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		086454D229CDE343009AA33D /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08FB2D3628D8A8BB00A67364 /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
+		};
 		08942F5728D89BBA003E5737 /* BonjourServices */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = BonjourServices;
