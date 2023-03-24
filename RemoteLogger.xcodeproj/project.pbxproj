@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		086454CD29CDE233009AA33D /* LogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086454CC29CDE233009AA33D /* LogsView.swift */; };
+		086454D029CDE2E3009AA33D /* LogOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086454CF29CDE2E3009AA33D /* LogOutput.swift */; };
+		086454D129CDE2E7009AA33D /* LogOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086454CF29CDE2E3009AA33D /* LogOutput.swift */; };
 		086454D329CDE343009AA33D /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 086454D229CDE343009AA33D /* Logging */; };
+		086454D529CDE4C1009AA33D /* LogObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086454D429CDE4C1009AA33D /* LogObjectView.swift */; };
 		08942F3328D89AAF003E5737 /* RemoteLoggerServerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08942F3228D89AAF003E5737 /* RemoteLoggerServerApp.swift */; };
 		08942F3528D89AAF003E5737 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08942F3428D89AAF003E5737 /* ContentView.swift */; };
 		08942F3728D89AB1003E5737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08942F3628D89AB1003E5737 /* Assets.xcassets */; };
@@ -18,6 +22,7 @@
 		08942F5028D89B58003E5737 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08942F4F28D89B58003E5737 /* Preview Assets.xcassets */; };
 		08942F5828D89BBA003E5737 /* BonjourServices in Frameworks */ = {isa = PBXBuildFile; productRef = 08942F5728D89BBA003E5737 /* BonjourServices */; };
 		08942F5A28D89BBF003E5737 /* BonjourServices in Frameworks */ = {isa = PBXBuildFile; productRef = 08942F5928D89BBF003E5737 /* BonjourServices */; };
+		08D693B829CDE7C000987F66 /* RemoteLogger in Resources */ = {isa = PBXBuildFile; fileRef = 08D693B729CDE7C000987F66 /* RemoteLogger */; };
 		08FB2D3828D8A8BB00A67364 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 08FB2D3728D8A8BB00A67364 /* Logging */; };
 		08FB2D3B28D8A91800A67364 /* LogOutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FB2D3A28D8A91800A67364 /* LogOutputStream.swift */; };
 		08FB2D3D28D8A9A400A67364 /* RemoteLogOutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FB2D3C28D8A9A400A67364 /* RemoteLogOutputStream.swift */; };
@@ -26,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		086454CC29CDE233009AA33D /* LogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsView.swift; sourceTree = "<group>"; };
+		086454CF29CDE2E3009AA33D /* LogOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutput.swift; sourceTree = "<group>"; };
+		086454D429CDE4C1009AA33D /* LogObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogObjectView.swift; sourceTree = "<group>"; };
 		08942F2F28D89AAF003E5737 /* RemoteLoggerServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteLoggerServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08942F3228D89AAF003E5737 /* RemoteLoggerServerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLoggerServerApp.swift; sourceTree = "<group>"; };
 		08942F3428D89AAF003E5737 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,7 +46,7 @@
 		08942F4B28D89B58003E5737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08942F4D28D89B58003E5737 /* RemoteLoggerClient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RemoteLoggerClient.entitlements; sourceTree = "<group>"; };
 		08942F4F28D89B58003E5737 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		08D693B529CDE64A00987F66 /* RemoteLogger */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = RemoteLogger; sourceTree = "<group>"; };
+		08D693B729CDE7C000987F66 /* RemoteLogger */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = RemoteLogger; sourceTree = "<group>"; };
 		08FB2D3428D89F9C00A67364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		08FB2D3528D8A61C00A67364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		08FB2D3A28D8A91800A67364 /* LogOutputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutputStream.swift; sourceTree = "<group>"; };
@@ -69,11 +77,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		086454CB29CDE222009AA33D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				08942F3428D89AAF003E5737 /* ContentView.swift */,
+				086454CC29CDE233009AA33D /* LogsView.swift */,
+				086454D429CDE4C1009AA33D /* LogObjectView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		086454CE29CDE2D3009AA33D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				086454CF29CDE2E3009AA33D /* LogOutput.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		08942F2628D89AAF003E5737 = {
 			isa = PBXGroup;
 			children = (
 				08942F3128D89AAF003E5737 /* RemoteLoggerServer */,
 				08942F4628D89B57003E5737 /* RemoteLoggerClient */,
+				086454CE29CDE2D3009AA33D /* Shared */,
 				08942F5428D89B71003E5737 /* Packages */,
 				08942F3028D89AAF003E5737 /* Products */,
 				08942F5628D89BBA003E5737 /* Frameworks */,
@@ -93,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				08942F3228D89AAF003E5737 /* RemoteLoggerServerApp.swift */,
-				08942F3428D89AAF003E5737 /* ContentView.swift */,
+				086454CB29CDE222009AA33D /* Views */,
 				08942F3628D89AB1003E5737 /* Assets.xcassets */,
 				08FB2D3428D89F9C00A67364 /* Info.plist */,
 				08942F3828D89AB1003E5737 /* RemoteLoggerServer.entitlements */,
@@ -137,7 +164,7 @@
 		08942F5428D89B71003E5737 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				08D693B529CDE64A00987F66 /* RemoteLogger */,
+				08D693B729CDE7C000987F66 /* RemoteLogger */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -249,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08942F3B28D89AB1003E5737 /* Preview Assets.xcassets in Resources */,
+				08D693B829CDE7C000987F66 /* RemoteLogger in Resources */,
 				08942F3728D89AB1003E5737 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +298,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				08942F3528D89AAF003E5737 /* ContentView.swift in Sources */,
+				086454D029CDE2E3009AA33D /* LogOutput.swift in Sources */,
+				086454CD29CDE233009AA33D /* LogsView.swift in Sources */,
 				08942F3328D89AAF003E5737 /* RemoteLoggerServerApp.swift in Sources */,
+				086454D529CDE4C1009AA33D /* LogObjectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +314,7 @@
 				08FB2D3D28D8A9A400A67364 /* RemoteLogOutputStream.swift in Sources */,
 				08FB2D3B28D8A91800A67364 /* LogOutputStream.swift in Sources */,
 				08942F4828D89B57003E5737 /* RemoteLoggerClientApp.swift in Sources */,
+				086454D129CDE2E7009AA33D /* LogOutput.swift in Sources */,
 				08FB2D3F28D8AC3200A67364 /* DeviceBrowserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
