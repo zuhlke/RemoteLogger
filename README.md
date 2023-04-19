@@ -2,4 +2,4 @@
 
 ## Demo
 
-![Demo](./.github/assets/RemoteLogger.gif)
+![Demo](./.github/assets/RemoteLogger.png)
