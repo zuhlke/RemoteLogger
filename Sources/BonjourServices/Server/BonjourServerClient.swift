@@ -1,3 +1,6 @@
+// Portions of this file are modified from Pulse Pro
+// (https://github.com/kean/PulsePro) by Alexander Grebenyuk.
+
 import SwiftUI
 import Combine
 import Network
