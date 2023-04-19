@@ -1,33 +1,21 @@
 # Acknowledgments
 
-## PulsePro
+## [Pulse Pro](https://github.com/kean/PulsePro)
 
-Portions adapted from [**PulsePro** by Alexander Grebenyuk](https://github.com/kean/PulsePro), used by permission under the MIT License.
+Portions adapted from [**Pulse Pro** by Alexander Grebenyuk](https://github.com/kean/PulsePro), © 2020-2022 Alexander Grebenyuk. Licensed under the Apache License v2.0.
 
-    Copyright (c) 2020-2022 Alexander Grebenyuk
-    
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
-    
-    The above copyright notice and this permission notice shall be included in all
-    copies or substantial portions of the Software.
-    
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-    SOFTWARE.
+As per the Apache License, files with modified PulsePro code have the following comment at the top:
 
+```swift
+// Portions of this file are modified from Pulse Pro
+// (https://github.com/kean/PulsePro) by Alexander Grebenyuk.
+```
 
-## SwiftLog
+## [SwiftLog](https://github.com/apple/swift-log)
 
 Copyright © 2018-2023 Apple Inc. and the Swift Logging API project authors. Licensed under the Apache License v2.0.
+
+## The Apache License v2.0
 
 
                                  Apache License
