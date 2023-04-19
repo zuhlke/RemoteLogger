@@ -4,4 +4,7 @@
    <FileRef
       location = "group:RemoteLogger.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:">
+   </FileRef>
 </Workspace>
