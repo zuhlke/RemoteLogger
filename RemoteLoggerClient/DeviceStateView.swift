@@ -40,7 +40,10 @@ struct DeviceStateView: View {
             }
             .buttonStyle(.plain)
         }
-        .onReceive(remoteLoggerClient.isConnected(to: device)) { state in
+        .onReceive(
+            remoteLoggerClient.isConnected(to: device)
+                .receive(on: DispatchQueue.main)
+        ) { state in
             self.state = state
         }
     }
